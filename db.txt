@@ -1,0 +1,31 @@
+ create table Card_Number_T(
+    -> card_number_id int NOT NULL,
+    -> issuer varchar(10) NOT NULL,
+    -> card_type_digit int NOT NULL,
+    -> account_number varchar(20) NOT NULL,
+    -> check_digit int NOT NULL,
+    -> verification_code varchar(10),
+    -> primary key(card_number_id));
+
+
+
+mysql> insert into Card_Number_T values(1,"627598",2,"78780989887",6,"null");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Card_Number_T values(2,"627598",5,"78780898981",6,"1234");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Card_Number_T values(3,"627598",2,"78780898982",6,"4567");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Card_Number_T values(4,"627598",0,"78780898983",6,"null");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Card_Number_T values(5,"627598",2,"78780898984",6,"9632");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Card_Number_T values(6,"627598",7,"78780898985",6,"null");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Card_Number_T values(7,"627598",2,"78780989881",6,"null");
+Query OK, 1 row affected (0.00 sec)
